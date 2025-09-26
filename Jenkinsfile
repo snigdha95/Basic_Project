@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Docker Run') {
             steps {
-                bat "docker run -d -p 8081:8080 snigdhareddy06/dummy-web:${env.BUILD_NUMBER}"
+                bat "docker run -d -p 8082:8080 snigdhareddy06/dummy-web:${env.BUILD_NUMBER}"
             }
         }
     }
